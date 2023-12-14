@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function jumlah(){
+        const per2jam = 3000;
+        const sejam = 1000;
+        let masuk = document.getElementById("msk").value;
+        let keluar = document.getElementById("krl").value;
+        let selisih = keluar - masuk;
+        let biaya = 0
+        
+        if(selisih <=2){
+            biaya= per2jam;
+        }
+        else{
+            jam_tambahan = selisih - 2;
+            biaya = per2jam + (sejam* jam_tambahan);
+        }
+         let hasil = document.getElementById("hasil");
+         hasil.innerHTML = biaya;
+    }
+    </script>
+</head>
+<body>
+    <h1> Menghitung biaya parkit</h1>
+    jam masuk:
+    <input type="number" id="msk">
+    <br>
+    jam keluar:
+    <input type="number" id="krl">
+    <br>
+    <button onclick="jumlah()" >jumlah</button>
+    <br>
+    <h2>
+    biaya Parkir yang harus di bayarkan
+    </h2>
+<span id="hasil"></span>
+</body>
+</html>

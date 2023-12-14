@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hitung() {
+          var rupiah = document.getElementById("rupiah").value;
+          var dollar = rupiah / 14650;
+          document.getElementById("hasil").innerHTML = "Dollar: " + dollar.toFixed(2);
+        }
+        </script>
+</head>
+<body>
+    
+<h2>Menghitung Kurs Rupiah</h2>
+
+<p>Rupiah: <input id="rupiah" type="number"></p>
+<button onclick="hitung()">Hitung</button>
+
+<p id="hasil"></p>
+
+</body>
+</html>

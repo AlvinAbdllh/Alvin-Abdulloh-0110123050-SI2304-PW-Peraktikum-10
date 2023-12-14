@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hitung() {
+          let r = document.getElementById("jarijari").value;
+          let luas = Math.round(Math.PI * r * r);
+          let keliling = Math.round(2 * Math.PI * r);
+          document.getElementById("hasil").innerHTML = "Luas: " + luas + "<br>Keliling: " + keliling;
+        }
+        </script>
+</head>
+<body>
+    <h2>Menghitung Luas dan Keliling Lingkaran</h2>
+
+<p>Jari-jari: <input id="jarijari" type="number"></p>
+<button onclick="hitung()">Hitung</button>
+
+<p id="hasil"></p>
+
+
+</body>
+</html>

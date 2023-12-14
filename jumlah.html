@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+       function jumlah(){
+        let Angka1 = parseFloat(document.getElementById("a").value);
+        let Angka2 = parseFloat(document.getElementById("b").value);
+        let hasil = Angka1 + Angka2  ;
+        document.getElementById("hasil").value = hasil;
+       }
+    </script>
+</head>
+<body>    
+    <h1>Pemjumlahan Bilangan</h1>
+    Masukan Angka 1<br>
+    <input type="number" name="" id="a" onchange="jumlah()">
+    <h1>+</h1>
+    Masukan Angka 2<br>
+    <input type="number" name="" id="b" onchange="jumlah()">
+    <br>
+    <br>
+    <H2>Hasil</H2>
+    <input type="text" style="border: solid 1px ;" id="hasil" readonly> 
+    
+</body>
+</html>
